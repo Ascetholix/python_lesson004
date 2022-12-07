@@ -41,14 +41,14 @@ def fill(x, list):                 # Функция заполнения тек�
       break
   return result
 
-firstFile = Path('text', 'test04.txt')
+firstFile = Path('text', 'test04.txt')   # файл с 4 задачи как первый файл
 firstList = []
 firstDict={}
-secondFile = Path('text', 'test05.txt')
+secondFile = Path('text', 'test05.txt')   # Файл созданый  для 5го задачи
 secondList = []
 secondDict={}
-saveFile = Path('text', 'test05_cons.txt')
-lst =[]                  # список для хранения суммы чисел двух многочленов
+saveFile = Path('text', 'test05_cons.txt') # Файл создаеться в этой программе
+lst =[]             # список для хранения суммы чисел двух многочленов
 with open(firstFile, 'r') as firstPolynomial:
   firstList = firstPolynomial.read().split('+')
   for i in range(len(firstList)):
