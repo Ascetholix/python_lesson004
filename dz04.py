@@ -7,7 +7,7 @@
 from random import randint
 from pathlib import Path
 
-def fill(x, list):  # Функция заполнения 
+def fill(x, list):  # Функция заполнения принимет самую большу степени и списки индесов
   cout = 0
   temp = ''
   result = ''
@@ -29,10 +29,10 @@ def fill(x, list):  # Функция заполнения
   return result
 
 saveFile = Path('text', 'test04.txt')
-k = 2
-lst = []
+k = int(input('Введите самиый большую степень: '))
+lst = []                         # Список для заполнение индексов
 
-for i in range(k+1):
+for i in range(k+1):              # цикл заполнения списка рандомными числами
   lst.append(randint(0,100))
 print(lst)
 

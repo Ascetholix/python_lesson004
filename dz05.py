@@ -3,7 +3,7 @@
 # (складываются числа, у которых "х" в одинаковых степенях).
 from pathlib import Path
 
-def compar(x : int ,dict1: dict): #  Функция парса по последнему элементу
+def compar(x : int ,dict1: dict): #  Функция парса по последнему элементу словаря
   temp = []
   if 'x^' in dict1[x]:
     temp = dict1[x].split('x^')
@@ -13,7 +13,7 @@ def compar(x : int ,dict1: dict): #  Функция парса по послед
     temp = dict1[x].split('=')
   return (temp[-1])
 
-def comparison(x : int ,dict1: dict): # Функция парса по превому элементу
+def comparison(x : int ,dict1: dict): # Функция парса по превому элементу словаря
   temp = []
   if 'x^' in dict1[x]:
     temp = dict1[x].split('x^')
