@@ -16,7 +16,7 @@ def accuracy(x: float):
   result = int(pi*(10**count))
   result = result/(10**count)
   return result
- 
+
 numFloat = float(input('Введите вешествено число точности: '))
 
 print(accuracy(numFloat))
